@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>S-VII Labs — Documentación Legal (Nana-7 Core)</title>
+  <style>
+    :root {
+      --bg: #0b0f19;
+      --surface: #111827;
+      --surface-alt: #1a2234;
+      --border: #1f2937;
+      --text: #f3f4f6;
+      --muted: #9ca3af;
+      --crimson: #dc2626;
+      --crimson-soft: rgba(220, 38, 38, 0.14);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, sans-serif;
+      background: radial-gradient(circle at top, #181c2b 0%, var(--bg) 55%);
+      color: var(--text);
+      line-height: 1.65;
+      min-height: 100vh;
+      padding: 2.5rem 1.25rem;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    .header {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-top: 4px solid var(--crimson);
+      border-radius: 14px;
+      padding: 2rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+    }
+
+    .badge {
+      display: inline-block;
+      background: var(--crimson-soft);
+      color: #fca5a5;
+      border: 1px solid rgba(220, 38, 38, 0.4);
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 0.25rem 0.7rem;
+      border-radius: 999px;
+      margin-bottom: 0.9rem;
+    }
+
+    .header h1 {
+      font-size: 1.85rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.45rem;
+    }
+
+    .header p {
+      color: var(--muted);
+      font-size: 0.98rem;
+    }
+
+    .nav-tabs {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      margin-top: 1.35rem;
+    }
+
+    .nav-tabs a {
+      text-decoration: none;
+      color: var(--text);
+      background: var(--surface-alt);
+      border: 1px solid var(--border);
+      padding: 0.55rem 1.1rem;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      transition: all 0.18s ease;
+    }
+
+    .nav-tabs a:hover,
+    .nav-tabs a.active {
+      background: var(--crimson);
+      border-color: var(--crimson);
+      color: #ffffff;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--crimson);
+      border-radius: 12px;
+      padding: 1.9rem 2rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.28);
+    }
+
+    .card h2 {
+      font-size: 1.35rem;
+      margin-bottom: 0.75rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .card .intro {
+      color: var(--muted);
+      margin-bottom: 1.25rem;
+      font-size: 0.96rem;
+    }
+
+    .clause {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1rem 1.15rem;
+      margin-bottom: 0.85rem;
+    }
+
+    .clause:last-child {
+      margin-bottom: 0;
+    }
+
+    .clause h3 {
+      font-size: 1rem;
+      color: #fca5a5;
+      margin-bottom: 0.3rem;
+    }
+
+    .clause p {
+      font-size: 0.94rem;
+      color: #d1d5db;
+    }
+
+    .footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.85rem;
+      margin-top: 2rem;
+      padding-top: 1.2rem;
+      border-top: 1px solid var(--border);
+    }
+
+    @media (max-width: 600px) {
+      .header, .card {
+        padding: 1.35rem;
+      }
+      .header h1 {
+        font-size: 1.45rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <header class="header">
+      <span class="badge">S-VII Labs • Marco Normativo</span>
+      <h1>Documentación Legal — Nana-7 Core</h1>
+      <p>Condiciones de Servicio y Política de Privacidad oficiales aplicables al uso del ecosistema Nana en servidores de Discord.</p>
+      <nav class="nav-tabs" aria-label="Secciones legales">
+        <a href="#tos">📜 Condiciones de Servicio (TOS)</a>
+        <a href="#privacy">🔒 Política de Privacidad</a>
+      </nav>
+    </header>
+
+    <section id="tos" class="card">
+      <h2>📜 Condiciones de Servicio (TOS)</h2>
+      <p class="intro">
+        Bienvenido al marco normativo de <strong>S-VII Labs</strong>. El uso de las herramientas de automatización,
+        streaming, moderación de voz y agentes de IA (<strong>Nana-7 Core v7</strong>) provistas en los servidores asociados
+        está sujeto a los siguientes términos operativos:
+      </p>
+
+      <div class="clause">
+        <h3>1. Uso Aceptable</h3>
+        <p>Las herramientas están destinadas a la dinamización comunitaria y soporte de producción. Queda prohibido el uso para actividades ilícitas, acoso o vulneración de sistemas.</p>
+      </div>
+
+      <div class="clause">
+        <h3>2. Disponibilidad</h3>
+        <p>Al operar bajo infraestructura híbrida/local, el servicio puede experimentar interrupciones por mantenimiento o caídas en APIs de terceros (Discord, Google AI).</p>
+      </div>
+
+      <div class="clause">
+        <h3>3. Control de Canales</h3>
+        <p>Los administradores regulan los permisos y modos de interacción del bot por servidor mediante la configuración interna de cada comunidad.</p>
+      </div>
+
+      <div class="clause">
+        <h3>4. Modificaciones</h3>
+        <p>S-VII Labs se reserva el derecho de actualizar módulos, comandos y capacidades para optimizar el rendimiento técnico del servicio.</p>
+      </div>
+    </section>
+
+    <section id="privacy" class="card">
+      <h2>🔒 Política de Privacidad</h2>
+      <p class="intro">
+        En <strong>S-VII Labs</strong>, el manejo ético de la información en entornos de colaboración es prioridad técnica.
+        Esta política detalla el tratamiento de datos del ecosistema <strong>Nana-7</strong>:
+      </p>
+
+      <div class="clause">
+        <h3>1. Procesamiento de Voz y Logs</h3>
+        <p>El flujo de audio (PCM 48kHz) se procesa temporalmente solo para transcripción en vivo y actas de post-producción almacenadas en SQLite local de forma segura.</p>
+      </div>
+
+      <div class="clause">
+        <h3>2. Configuración por Servidor</h3>
+        <p>Se guardan parámetros operativos (canales, roles, presets de voz y preferencias visuales) aislados por servidor.</p>
+      </div>
+
+      <div class="clause">
+        <h3>3. APIs de Terceros</h3>
+        <p>El procesamiento de lenguaje utiliza llamadas cifradas (Google Gemini). No se comercializan ni ceden datos personales a terceros.</p>
+      </div>
+
+      <div class="clause">
+        <h3>4. Derechos</h3>
+        <p>Puedes solicitar la purga de registros asociados a tu usuario o consultar directamente con la administración del servidor correspondiente.</p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      S-VII Labs • Infraestructura, Automatización y Estándar de Privacidad • Actualizado 2026
+    </footer>
+  </main>
+</body>
+</html>
